@@ -1,0 +1,35 @@
+{
+    "build": {
+        "tasks_filename": "build.json"
+    },
+    "bridge": {
+        "worker_attribute_set": {
+            "attributes": [
+              "fixme_attribute_or_managed_worker"
+            ]
+          },
+          "entity_interest": {
+            "range_entity_interest": {
+              "radius": 10
+            }
+          },
+          "component_delivery": {
+            "default": "RELIABLE_ORDERED",
+            "checkout_all_initially": true
+          }
+    },
+    "managed": {
+        "macos": {
+            "artifact_name": "fixme.jar",
+            "command": "./fixme"
+        }
+    },
+    "external": {
+        "local": {
+            "run_type": "EXECUTABLE",
+            "macos": {
+                "command": "./fixme"
+            }
+        }
+    }
+}

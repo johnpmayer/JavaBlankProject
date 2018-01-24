@@ -1,2 +1,16 @@
+# Pants build system
 .pants.d/
 .pants.workdir.file_lock
+
+# SpatialOS project build directory
+build/
+
+# Cache and other project metadata
+.spatialos/
+
+# Logs
+spatial.log
+logs/
+
+# Schema generated sources
+generated_code/

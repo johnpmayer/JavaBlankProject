@@ -1,0 +1,6 @@
+package blank;
+
+component Blank {
+  id = 1000;
+  int32 actions = 1;
+}
